@@ -4,13 +4,14 @@
     <title>
         Login Form
     </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <style>
 
         .outer-box{
             width: 100%;
             height: 100vh; 
             /* background:linear-gradient(to right top ,rgb(41, 216, 232) , purple); */
-            background:linear-gradient(to right top ,violet,indigo,green,yellow,orange,red);
+            background:linear-gradient(to right top ,#CF3BF3 ,#66DCDD);
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -21,9 +22,20 @@
             height: 500px;
             background-color: white;
             border-radius: 10px;
+            padding: 30px;
         }
         body{
             margin: 0px;
+        }
+        h1{
+            text-align: center;
+        }
+        .wrap{
+           border-bottom: 2px solid gray;
+        }
+        input{
+            padding: 5px 0px;
+            border:none
         }
     </style>
 </head>
@@ -35,16 +47,18 @@
     <div class="outer-box">
 
         <div class="inner-box">
+             
             <form action="">
-            <h1>Login</h1>
-            <p>Username</p>
-            <input type="text" placeholder="Enter you name">
-            <p>Password</p>
-            <input type="password" >
-            <p>Email</p>
-            <input type="email"> <br>
-            <input type="submit">
-        </form>
+                <h1>Login</h1>
+                <h4>Username</h4>
+                <div class="wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                      </svg>
+                      <input type="text" placeholder="Enter your name">
+                </div>
+               
+            </form>
         </div>
 
     </div>
